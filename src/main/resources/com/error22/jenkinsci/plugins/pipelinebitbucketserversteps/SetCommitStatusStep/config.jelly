@@ -1,0 +1,31 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form" xmlns:c="/lib/credentials">
+   <f:entry field="serverUrl" title="Server URL">
+        <f:textbox/>
+    </f:entry>
+    <f:entry field="credentials" title="Credentials">
+        <f:textbox/>
+    </f:entry>
+    <f:entry field="commitId" title="Commit Id">
+        <f:textbox/>
+    </f:entry>
+    <f:entry name="state" title="Build State" field="state">
+       <select name="state">
+           <option value="INPROGRESS">In Progress</option>
+           <option value="FAILED">Failed</option>
+           <option value="SUCCESSFUL">Successful</option>
+       </select>
+   </f:entry>
+   <f:entry field="key" title="Build Key">
+      <f:textbox/>
+   </f:entry>
+   <f:entry field="url" title="Build Url">
+      <f:textbox/>
+   </f:entry>
+   <f:entry field="name" title="Build Name">
+      <f:textbox/>
+   </f:entry>
+   <f:entry field="description" title="Build Description">
+      <f:textbox/>
+   </f:entry>
+</j:jelly>
